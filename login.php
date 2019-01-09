@@ -11,6 +11,7 @@
 	<img src="avatar.png"/>
 	<h1>Login Here</h1>
 		<form  method="post" action="login.php">
+		<?php include('errors.php'); ?>
 			<!-- Login -->
 			<div class="form-input fa fa-user">
 				<input type="text" name="username" placeholder="User Name" required='required'/> 

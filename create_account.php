@@ -11,9 +11,10 @@
 	<img src="avatar.png"/>
 	<h1>Sign Up Here</h1>
 		<form  method="post" action="create_account.php">
+		<?php include('errors.php'); ?>
 			<!-- user_name -->
 			<div class="form-input fa fa-user">
-				<input type="text" name="username" required='required' placeholder="User Name"/> 
+				<input type="text" name="username" required='required' placeholder="User Name" value="<?php echo $username; ?>"/> 
 			</div>
 			<!-- Password -->
 			<div class="form-input fa fa-lock">
